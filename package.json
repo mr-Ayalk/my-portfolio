@@ -2,11 +2,15 @@
   "name": "3dfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://github.com/mr-Ayalk/Bamah_Engineering.git",
   "type": "module",
   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -27,6 +31,7 @@
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.13",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.6",
     "vite": "^4.1.0"
