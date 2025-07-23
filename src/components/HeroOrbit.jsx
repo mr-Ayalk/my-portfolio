@@ -1,13 +1,12 @@
-import React from "react";
 import { twMerge } from "tailwind-merge";
 
 export const HeroOrbit = ({
   children,
   size,
   rotation,
-  shouldOrbit = false,
+  shouldOrbit = true,
   orbitDuration,
-  shouldSpin = false,
+  shouldSpin = true,
   spinDuration,
 }) => {
   return (
