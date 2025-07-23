@@ -1,5 +1,5 @@
 import React from "react";
-import Tilt from 'react-parallax-tilt';
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -8,10 +8,10 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
       <div
         options={{
@@ -19,15 +19,15 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
       >
         <img
           src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
+          alt="web-development"
+          className="w-16 h-16 object-contain"
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className="text-white text-[20px] font-bold text-center">
           {title}
         </h3>
       </div>
@@ -40,17 +40,26 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Who are We?.</h2>
+        <h2 className="text-yellow-400 text-5xl font-bold">Who am I ?</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-       With over 13 years of dedicated experience in the electrical engineering sector, Farez Engineering Solution has established itself as a trusted leader in delivering robust and innovative solutions. Our extensive track record includes the successful execution of grand and complex projects for a diverse array of clients, ranging from governmental institutions requiring critical infrastructure to non-governmental organizations seeking advanced electrical systems. This rich history underscores our proven capability, unwavering commitment to quality, and deep understanding of high-stakes environments, ensuring unparalleled reliability and performance for every endeavor
+        Passionate full-stack developer with over 2 years of experience in
+        JavaScript and its frameworks, including React, Node.js, Express.js, and
+        Next.js. Additionally, I have expertise in Java, particularly with
+        Spring Boot. I have successfully completed various local projects,
+        gaining hands-on experience in database management with MySQL and
+        MongoDB. I have a proven ability to deliver high-quality solutions
+        across diverse domains. Proficient in creating responsive designs using
+        Tailwind CSS and Bootstrap, as well as implementing various UX/UI
+        components. Committed to continuous learning and skill enhancement in
+        the ever-evolving technology landscape.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

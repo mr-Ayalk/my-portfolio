@@ -19,8 +19,11 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
+  // carrent,
+  bamah,
+  layer,
+  top,
+  // jobit,
   tripguide,
   threejs,
 } from "../assets";
@@ -42,19 +45,21 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Electrical Design and Installation",
+    title: "crafting pixel-perfect, fluid, and responsive web applications",
     icon: web,
   },
   {
-    title: "System Design",
+    title:
+      "native mobile experiences with meticulous UI fidelity and cross-device adaptability",
     icon: mobile,
   },
   {
-    title: "Electrical machine maintainance",
+    title:
+      "Building scalable and secure server-side architectures,robust back-end APIs",
     icon: backend,
   },
   {
-    title: "Power Control",
+    title: "Bringing ideas to life through design and innovation",
     icon: creator,
   },
 ];
@@ -198,49 +203,49 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Top Construction Company",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A modern, fully responsive front-end project built with React.js and styled using Tailwind CSS. Features smooth animations powered by Framer Motion, clean code structure, and top-tier code quality.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Framer Motion",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: top,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "SAAS Landing Page",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A sleek and responsive SaaS landing page built with Next.js, React, Tailwind CSS, and Framer Motion. Combines modern UI design with smooth animations for a high-performance user experience.",
     tags: [
       {
-        name: "react",
+        name: "Next.js and React",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Framer Motion",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: layer,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Bamah Tech and Engineering Solution",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -257,7 +262,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: bamah,
     source_code_link: "https://github.com/",
   },
 ];
