@@ -65,9 +65,7 @@ import { FaGithub } from "react-icons/fa";
 import { HeroOrbit } from "./HeroOrbit"; // Make sure this is the correct import
 import myImage from "../assets/images/IMG_20241024_065847_232.jpg"; // Replace with your actual image path
 
-
 import grainImage from "../assets/images/grain.jpg";
-
 
 const Hero = () => {
   return (
@@ -79,7 +77,7 @@ const Hero = () => {
         <div
           className="absolute inset-0 z-50 opacity-5"
           style={{
-            backgroundImage: `url(${grainImage})` ,
+            backgroundImage: `url(${grainImage})`,
           }}
         ></div>
 
@@ -234,9 +232,9 @@ const Hero = () => {
             className="w-28 md:w-60 rounded-full "
             alt="Developer profile"
           />
-          <div className="bg-gray-950 border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
-            <div className="!bg-green-500 !size-2.5 rounded-full relative">
-              <div className="!bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
+          <div className="bg-gray-950 border-1 p-2 border-gray-200 shadow-lg  px-4 py-15 inline-flex items-center gap-4 rounded-lg">
+            <div className="bg-green-500 w-3 h-3 rounded-full relative">
+              <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
             </div>
             <div className="text-sm font-medium">
               Available for new projects
@@ -246,7 +244,9 @@ const Hero = () => {
 
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Hey 👋 I’m Ayalkbet, a Full Stack Developer
+            Hey 👋 I’m Ayalkbet,
+            <div className="text-yellow-200">a Full Stack </div>
+            Software Developer
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             I specialize in crafting pixel-perfect, fluid, and responsive web
