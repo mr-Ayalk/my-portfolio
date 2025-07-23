@@ -38,6 +38,7 @@ import selman from "./selman.png";
 import abdi from "./abdi.png";
 import healthCare from "./healthCare.png";
 import shop from "./shop.png"
+import FoodDelivery from "./FoodDelivery.png"
 export {
   logo,
   backend,
@@ -78,4 +79,5 @@ export {
   abdi,
   healthCare,
   shop,
+  FoodDelivery,
 };

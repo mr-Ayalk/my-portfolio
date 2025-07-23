@@ -34,6 +34,7 @@ import {
   selman,
   healthCare,
   shop,
+  FoodDelivery,
 } from "../assets";
 
 export const navLinks = [
@@ -354,7 +355,7 @@ const FullStackprojects = [
 ];
 const MyProduct = [
   {
-    name: "HealthCare Management System",
+    name: "HealthCare Management System |AI Assitant Integrated",
     description:
       "A modern, fully responsive front-end project built with React.js and styled using Tailwind CSS. Features smooth animations powered by Framer Motion, clean code .",
     tags: [
@@ -379,7 +380,7 @@ const MyProduct = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "E-Commerce App",
+    name: "E-Commerce App | Local Payment Method Integrated",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -401,6 +402,31 @@ const MyProduct = [
       },
     ],
     image: shop,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "FoodDelivery Mobile App | Local Payment Method Integrated",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Nodejs,Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDb",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: FoodDelivery,
     source_code_link: "https://github.com/",
   },
 ];

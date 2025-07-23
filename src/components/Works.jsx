@@ -104,7 +104,7 @@ const Works = () => {
         ))}
       </div>
       <h3 className="mt-10 text-3xl text-white">
-        My Products <span className="text-yellow-300">Coming Soon</span>
+        My Products <span className="text-yellow-300">Coming Soon...</span>
       </h3>
 
       <div className="mt-10 flex flex-wrap gap-7  ">
