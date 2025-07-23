@@ -43,8 +43,8 @@ const Navbar = () => {
           }}
         >
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            My Portfolio &nbsp;
-            <span className="sm:block hidden"> | Ayalk </span>
+            My Portfolio | &nbsp;
+            <span className="sm:block hidden text-yellow-300"> Ayalk </span>
           </p>
         </Link>
 

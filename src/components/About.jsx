@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Passionate full-stack developer with over 2 years of experience in
+        Passionate full-stack developer with over 3 years of experience in
         JavaScript and its frameworks, including React, Node.js, Express.js, and
         Next.js. Additionally, I have expertise in Java, particularly with
         Spring Boot. I have successfully completed various local projects,
@@ -59,7 +59,7 @@ const About = () => {
         the ever-evolving technology landscape.
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10  ">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

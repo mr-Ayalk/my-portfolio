@@ -24,8 +24,11 @@ import {
   layer,
   top,
   // jobit,
-  tripguide,
+  // tripguide,
+  promptly,
   threejs,
+  chatApp,
+  lms,
 } from "../assets";
 
 export const navLinks = [
@@ -50,7 +53,7 @@ const services = [
   },
   {
     title:
-      "native mobile experiences with meticulous UI fidelity and cross-device adaptability",
+      "native mobile with meticulous UI fidelity and cross-device adaptability",
     icon: mobile,
   },
   {
@@ -250,11 +253,11 @@ const projects = [
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Tailwind",
         color: "green-text-gradient",
       },
       {
@@ -267,4 +270,89 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const FullStackprojects = [
+  {
+    name: "promptly | AI Powered Prompt",
+    description:
+      "A modern, fully responsive front-end project built with React.js and styled using Tailwind CSS. Features smooth animations powered by Framer Motion, clean code .",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Clean and Structured Code",
+        color: "yellow",
+      },
+    ],
+    image: promptly,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Weyyee Chat App | MERN Project",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Nodejs,Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDb",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: chatApp,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "NEXT Tutorial LMS | NEXT Tutorial LMS",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Clean and Structured Code",
+        color: "yellow",
+      },
+    ],
+    image: lms,
+    source_code_link: "https://github.com/",
+  },
+];
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  FullStackprojects,
+};

@@ -20,7 +20,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import layer from "./layer.png"
+import layer from "./layer.png";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -29,8 +29,10 @@ import top from "./top.png";
 import carrent from "./carrent.png";
 import bamah from "./bamah.png";
 import jobit from "./jobit.png";
+import promptly from "./promptly.png";
 import tripguide from "./tripguide.png";
-
+import chatApp from "./chatApp.png";
+import lms from "./lms.png";
 export {
   logo,
   backend,
@@ -63,4 +65,7 @@ export {
   layer,
   jobit,
   tripguide,
+  promptly,
+  chatApp,
+  lms,
 };
