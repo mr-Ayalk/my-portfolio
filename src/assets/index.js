@@ -36,6 +36,8 @@ import lms from "./lms.png";
 import oli from "./oli.png";
 import selman from "./selman.png";
 import abdi from "./abdi.png";
+import healthCare from "./healthCare.png";
+import shop from "./shop.png"
 export {
   logo,
   backend,
@@ -74,4 +76,6 @@ export {
   oli,
   selman,
   abdi,
+  healthCare,
+  shop,
 };

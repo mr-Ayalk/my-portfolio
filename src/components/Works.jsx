@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { FullStackprojects, projects } from "../constants";
+import { FullStackprojects, MyProduct, projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -100,6 +100,15 @@ const Works = () => {
 
       <div className="mt-10 flex flex-wrap gap-7  ">
         {FullStackprojects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
+      <h3 className="mt-10 text-3xl text-white">
+        My Products <span className="text-yellow-300">Coming Soon</span>
+      </h3>
+
+      <div className="mt-10 flex flex-wrap gap-7  ">
+        { MyProduct.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>

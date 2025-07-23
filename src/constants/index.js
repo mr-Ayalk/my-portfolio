@@ -32,6 +32,8 @@ import {
   lms,
   oli,
   selman,
+  healthCare,
+  shop,
 } from "../assets";
 
 export const navLinks = [
@@ -350,7 +352,58 @@ const FullStackprojects = [
     source_code_link: "https://github.com/",
   },
 ];
-
+const MyProduct = [
+  {
+    name: "HealthCare Management System",
+    description:
+      "A modern, fully responsive front-end project built with React.js and styled using Tailwind CSS. Features smooth animations powered by Framer Motion, clean code .",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Clean and Structured Code",
+        color: "yellow",
+      },
+    ],
+    image: healthCare,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "E-Commerce App",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Nodejs,Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDb",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: shop,
+    source_code_link: "https://github.com/",
+  },
+];
 export {
   services,
   technologies,
@@ -358,4 +411,5 @@ export {
   testimonials,
   projects,
   FullStackprojects,
+  MyProduct,
 };
