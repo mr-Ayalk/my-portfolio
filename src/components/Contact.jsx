@@ -67,11 +67,11 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden `}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl "
+        className="flex-[0.75] bg-black-100 p-8 rounded-2xl mt-16 "
       >
         <p className="text-3xl text-yellow-200">Get in touch</p>
         <h3 className="text-2xl text-yellow-400">Contact.</h3>
@@ -126,10 +126,10 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        className="xl:flex-1 xl:h-auto mt-16"
       >
         {/* <EarthCanvas /> */}
-        <Card className=" p-10 relative md:col-span-2 lg:col-span-1 lg:h-full">
+        <Card className=" p-10 relative md:col-span-2 lg:col-span-1 lg:h-full ">
           <img
             src={mapImage}
             alt="map"

@@ -8,7 +8,7 @@ import grainImage from "../assets/images/grain.jpg";
 const Hero = () => {
   return (
     <div
-      className="pt-32 md:pt-32 lg:pt-32 relative z-0 pb-20 overflow-x-clip"
+      className="mx-auto justify-center  pt-32 md:pt-32 lg:pt-32 relative z-0 pb-20 overflow-x-clip"
       id="home"
     >
       <div className="absolute inset-0 pointer-events-none [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">

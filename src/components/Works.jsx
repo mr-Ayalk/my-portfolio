@@ -17,7 +17,10 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className="mx-auto justify-center"
+    >
       <Tilt
         options={{
           max: 45,
@@ -108,7 +111,7 @@ const Works = () => {
       </h3>
 
       <div className="mt-10 flex flex-wrap gap-7  ">
-        { MyProduct.map((project, index) => (
+        {MyProduct.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>

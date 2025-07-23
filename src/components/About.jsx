@@ -1,4 +1,4 @@
-import React from "react";
+
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
@@ -37,7 +37,7 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <>
+    <div className="mx-auto justify-center">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className="text-yellow-400 text-5xl font-bold">Who am I ?</h2>
@@ -60,12 +60,12 @@ const About = () => {
         deliver high-quality, scalable solutions across different domains.
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10  ">
+      <div className="mx-auto justify-center mt-20 flex flex-wrap gap-10  ">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
