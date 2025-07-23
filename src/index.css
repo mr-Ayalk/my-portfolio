@@ -42,7 +42,11 @@
     rgba(60, 51, 80, 0) 100%
   );
 }
-
+.myResume img {
+  background: white;
+  color: white !important;
+  border-radius: 100%;
+}
 .green-pink-gradient {
   background: "#00cea8";
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);

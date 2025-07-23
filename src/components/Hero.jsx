@@ -1,50 +1,291 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
-import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+// import { styles } from "../styles";
+// import { ComputersCanvas } from "./canvas";
+
+// const Hero = () => {
+//   return (
+//     <section className={`relative w-full h-screen mx-auto`}>
+//       <div
+//         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+//       >
+//         <div className='flex flex-col justify-center items-center mt-5'>
+//           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
+//           <div className='w-1 sm:h-80 h-40 violet-gradient' />
+//         </div>
+
+//         <div>
+//           <h1 className={`${styles.heroHeadText} text-white`}>
+//             Bamah <span className='text-[#915EFF]'>Engineering Solution</span>
+//           </h1>
+//           <p className={`${styles.heroSubText} mt-2  text-white-100`}>
+//          Your Partner in Sustainable Power.  <br className='sm:block hidden' />
+//              Precision. Power. Progress
+//           </p>
+//         </div>
+//       </div>
+
+//       <ComputersCanvas />
+
+//       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+//         <a href='#about'>
+//           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+//             <motion.div
+//               animate={{
+//                 y: [0, 24, 0],
+//               }}
+//               transition={{
+//                 duration: 1.5,
+//                 repeat: Infinity,
+//                 repeatType: "loop",
+//               }}
+//               className='w-3 h-3 rounded-full bg-secondary mb-1'
+//             />
+//           </div>
+//         </a>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Hero;
+// "use client";
+// import Image from "next/image";
+
+// import {
+//   FaGithub,
+//   FaLinkedin,
+//   FaFacebook,
+//   FaXTwitter,
+//   FaInstagram,
+// } from "react-icons/fa6";
+
+import { FaGithub } from "react-icons/fa";
+
+import { HeroOrbit } from "./HeroOrbit"; // Make sure this is the correct import
+import myImage from "../assets/images/IMG_20241024_065847_232.jpg"; // Replace with your actual image path
+
+
+import grainImage from "../assets/images/grain.jpg";
+
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
-      <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+    <div
+      className="py-32 md:py-32 lg:py-32 relative z-0 overflow-x-clip"
+      id="home"
+    >
+      <div className="absolute inset-0 pointer-events-none [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+        <div
+          className="absolute inset-0 z-50 opacity-5"
+          style={{
+            backgroundImage: `url(${grainImage})` ,
+          }}
+        ></div>
+
+        {/* Hero orbit rings */}
+        {[620, 820, 1020, 1220].map((size) => (
+          <div key={size} className={`size-[${size}px] hero-ring`}></div>
+        ))}
+
+        <HeroOrbit
+          size={430}
+          rotation={-14}
+          shouldOrbit
+          orbitDuration="30s"
+          shouldSpin
+          spinDuration="3s"
+        >
+          <img
+            src="/src/assets/icons/sparkle.svg"
+            alt="Star"
+            className="w-6 h-6"
+          />
+        </HeroOrbit>
+
+        <HeroOrbit
+          size={440}
+          rotation={79}
+          shouldOrbit
+          orbitDuration="32s"
+          shouldSpin
+          spinDuration="3s"
+        >
+          <img
+            src="/src/assets/icons/sparkle.svg"
+            alt="Star"
+            className="w-6 h-6"
+          />{" "}
+        </HeroOrbit>
+
+        <HeroOrbit
+          size={520}
+          rotation={-41}
+          shouldOrbit
+          orbitDuration="34s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <div className="size-2 rounded-full text-white" />
+        </HeroOrbit>
+
+        <HeroOrbit
+          size={530}
+          rotation={178}
+          shouldOrbit
+          orbitDuration="36s"
+          shouldSpin
+          spinDuration="3s"
+        >
+          <img
+            src="/src/assets/icons/sparkle.svg"
+            alt="Star"
+            className="w-6 h-6"
+          />
+        </HeroOrbit>
+
+        <HeroOrbit
+          size={550}
+          rotation={20}
+          shouldOrbit
+          orbitDuration="38s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <img
+            src="/src/assets/icons/star.svg"
+            alt="Star"
+            className="w-6 h-6"
+          />
+        </HeroOrbit>
+
+        <HeroOrbit
+          size={590}
+          rotation={98}
+          shouldOrbit
+          orbitDuration="40s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <img
+            src="/src/assets/icons/star.svg"
+            alt="Star"
+            className="w-6 h-6"
+          />
+        </HeroOrbit>
+
+        <HeroOrbit
+          size={650}
+          rotation={-5}
+          shouldOrbit
+          orbitDuration="42s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <div className="size-2 rounded-full text-emerald-300/20" />
+        </HeroOrbit>
+
+        <HeroOrbit
+          size={710}
+          rotation={144}
+          shouldOrbit
+          orbitDuration="44s"
+          shouldSpin
+          spinDuration="3s"
+        >
+          <img
+            src="/src/assets/icons/sparkle.svg"
+            alt="Star"
+            className="w-6 h-6"
+          />
+        </HeroOrbit>
+
+        <HeroOrbit
+          size={720}
+          rotation={85}
+          shouldOrbit
+          orbitDuration="46s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <div className="size-3 rounded-full text-emerald-300/20" />
+        </HeroOrbit>
+
+        <HeroOrbit
+          size={800}
+          rotation={-72}
+          shouldOrbit
+          orbitDuration="48s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <img
+            src="/src/assets/icons/star.svg"
+            alt="Star"
+            className="w-6 h-6"
+          />
+        </HeroOrbit>
+      </div>
+
+      <div className="container">
+        <div className="flex flex-col items-center">
+          <img
+            src={myImage}
+            className="w-28 md:w-60 rounded-full "
+            alt="Developer profile"
+          />
+          <div className="bg-gray-950 border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
+            <div className="!bg-green-500 !size-2.5 rounded-full relative">
+              <div className="!bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
+            </div>
+            <div className="text-sm font-medium">
+              Available for new projects
+            </div>
+          </div>
         </div>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Bamah <span className='text-[#915EFF]'>Engineering Solution</span>
+        <div className="max-w-lg mx-auto">
+          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
+            Hey 👋 I’m Ayalkbet, a Full Stack Developer
           </h1>
-          <p className={`${styles.heroSubText} mt-2  text-white-100`}>
-         Your Partner in Sustainable Power.  <br className='sm:block hidden' />
-             Precision. Power. Progress
+          <p className="mt-4 text-center text-white/60 md:text-lg">
+            I specialize in crafting pixel-perfect, fluid, and responsive web
+            applications. I bring designs to life with smooth animations, clean
+            and well-structured front-end architecture, and robust back-end APIs
+            that just work.
           </p>
         </div>
-      </div>
 
-      <ComputersCanvas />
-
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
+        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+          <button className="myResume inline-flex items-center gap-2 border border-white/15 px-4 h-12 rounded-xl">
+            <a
+              href="https://docs.google.com/document/d/1HH47IMkWDWWv71rh774SAIkKgtKTb_bme6XnOTNhVz4/edit?tab=t.0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="font-semibold">My Resume</span>
+            </a>
+            <img
+              src="/src/assets/icons/arrow-down.svg"
+              alt="Star"
+              className="w-6 h-6 !text-white"
+              color="white"
             />
-          </div>
-        </a>
+          </button>
+
+          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+            <FaGithub className="size-6" />
+            <a
+              href="https://github.com/mr-Ayalk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="font-semibold">My Github</span>
+            </a>
+          </button>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
