@@ -33,6 +33,9 @@ import promptly from "./promptly.png";
 import tripguide from "./tripguide.png";
 import chatApp from "./chatApp.png";
 import lms from "./lms.png";
+import oli from "./oli.png";
+import selman from "./selman.png";
+import abdi from "./abdi.png";
 export {
   logo,
   backend,
@@ -68,4 +71,7 @@ export {
   promptly,
   chatApp,
   lms,
+  oli,
+  selman,
+  abdi,
 };

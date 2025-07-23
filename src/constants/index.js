@@ -23,12 +23,15 @@ import {
   bamah,
   layer,
   top,
+  abdi,
   // jobit,
   // tripguide,
   promptly,
   threejs,
   chatApp,
   lms,
+  oli,
+  selman,
 } from "../assets";
 
 export const navLinks = [
@@ -180,27 +183,27 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "He’s not just a developer, he’s a problem solver. Always exploring new tech to improve our product.",
+    name: "Abdisa Teso",
+    designation: "CoFounder",
+    company: "Bamah Technology & Engineering",
+    image: abdi,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Ayalk's attention to detail is unmatched — every design was pixel-perfect and flawlessly responsive.",
+    name: "Rabuma Milisha",
+    designation: "Quality Assurance and React Dev.",
+    company: "Organic Tech",
+    image: selman,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+      "Our backend was a mess until Ayalk stepped in. Now, it’s fast, secure, and built to scale.",
+    name: "Oli Dereje",
     designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    company: "Top Construction",
+    image: oli,
   },
 ];
 
