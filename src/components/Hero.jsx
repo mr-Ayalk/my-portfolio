@@ -2,7 +2,8 @@ import { FaGithub } from "react-icons/fa";
 import ArrowDown from "../assets/icons/arrow-down.svg?react";
 import { HeroOrbit } from "./HeroOrbit";
 import myImage from "../assets/images/IMG_20241024_065847_232.jpg";
-
+import SparkleImage from "../assets/icons/sparkle.svg";
+import StarImage from "../assets/icons/star.svg";
 import grainImage from "../assets/images/grain.jpg";
 
 const Hero = () => {
@@ -39,11 +40,7 @@ const Hero = () => {
           shouldSpin
           spinDuration="3s"
         >
-          <img
-            src="/src/assets/icons/sparkle.svg"
-            alt="Star"
-            className="w-6 h-6 invert "
-          />
+          <img src={SparkleImage} alt="Star" className="w-6 h-6 invert " />
         </HeroOrbit>
 
         <HeroOrbit
@@ -54,11 +51,7 @@ const Hero = () => {
           shouldSpin
           spinDuration="3s"
         >
-          <img
-            src="/src/assets/icons/sparkle.svg"
-            alt="Star"
-            className="w-10 h-10 invert"
-          />{" "}
+          <img src={SparkleImage} alt="Star" className="w-10 h-10 invert" />{" "}
         </HeroOrbit>
 
         <HeroOrbit
@@ -80,11 +73,7 @@ const Hero = () => {
           shouldSpin
           spinDuration="3s"
         >
-          <img
-            src="/src/assets/icons/sparkle.svg"
-            alt="Star"
-            className="w-14 h-14 invert"
-          />
+          <img src={SparkleImage} alt="Star" className="w-14 h-14 invert" />
         </HeroOrbit>
 
         <HeroOrbit
@@ -95,11 +84,7 @@ const Hero = () => {
           shouldSpin
           spinDuration="6s"
         >
-          <img
-            src="/src/assets/icons/star.svg"
-            alt="Star"
-            className="w-9 h-9 invert"
-          />
+          <img src={StarImage} alt="Star" className="w-9 h-9 invert" />
         </HeroOrbit>
 
         <HeroOrbit
@@ -110,11 +95,7 @@ const Hero = () => {
           shouldSpin
           spinDuration="6s"
         >
-          <img
-            src="/src/assets/icons/star.svg"
-            alt="Star"
-            className="w-6 h-6 invert"
-          />
+          <img src={StarImage} alt="Star" className="w-6 h-6 invert" />
         </HeroOrbit>
 
         <HeroOrbit
@@ -136,11 +117,7 @@ const Hero = () => {
           shouldSpin
           spinDuration="3s"
         >
-          <img
-            src="/src/assets/icons/sparkle.svg"
-            alt="Star"
-            className="w-6 h-6 invert"
-          />
+          <img src={SparkleImage} alt="Star" className="w-6 h-6 invert" />
         </HeroOrbit>
 
         <HeroOrbit
@@ -162,11 +139,7 @@ const Hero = () => {
           shouldSpin
           spinDuration="6s"
         >
-          <img
-            src="/src/assets/icons/star.svg"
-            alt="Star"
-            className="w-6 h-6 invert"
-          />
+          <img src={StarImage} alt="Star" className="w-6 h-6 invert" />
         </HeroOrbit>
       </div>
 
