@@ -1,5 +1,5 @@
 import { FaGithub } from "react-icons/fa";
-
+import ArrowDown from "../assets/icons/arrow-down.svg?react";
 import { HeroOrbit } from "./HeroOrbit";
 import myImage from "../assets/images/IMG_20241024_065847_232.jpg";
 
@@ -8,7 +8,7 @@ import grainImage from "../assets/images/grain.jpg";
 const Hero = () => {
   return (
     <div
-      className="py-32 md:py-32 lg:py-32 relative z-0 overflow-x-clip"
+      className="pt-32 md:pt-32 lg:pt-32 relative z-0 pb-20 overflow-x-clip"
       id="home"
     >
       <div className="absolute inset-0 pointer-events-none [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
@@ -208,14 +208,10 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="font-semibold">My Resume</span>
+              <span className="font-semibold whitespace-nowrap inline-flex">
+                My Resume <ArrowDown className="text-white fill-white w-5" />
+              </span>
             </a>
-            <img
-              src="/src/assets/icons/arrow-down.svg"
-              alt="Star"
-              className="w-6 h-6 invert text-white"
-              color="white"
-            />
           </button>
 
           <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
