@@ -47,16 +47,17 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Passionate full-stack developer with over 3 years of experience in
-        JavaScript and its frameworks, including React, Node.js, Express.js, and
-        Next.js. Additionally, I have expertise in Java, particularly with
-        Spring Boot. I have successfully completed various local projects,
-        gaining hands-on experience in database management with MySQL and
-        MongoDB. I have a proven ability to deliver high-quality solutions
-        across diverse domains. Proficient in creating responsive designs using
-        Tailwind CSS and Bootstrap, as well as implementing various UX/UI
-        components. Committed to continuous learning and skill enhancement in
-        the ever-evolving technology landscape.
+        I’m a passionate full-stack developer with over 3 years of experience
+        working with JavaScript and its modern frameworks—including React,
+        Node.js, Express.js, and Next.js. I also specialize in Java,
+        particularly using Spring Boot for backend development. I’ve
+        successfully delivered various local projects, gaining hands-on
+        experience in database management with both MySQL and MongoDB. I'm
+        skilled at building responsive, user-friendly interfaces using Tailwind
+        CSS and Bootstrap, and I take pride in implementing clean, pixel-perfect
+        UI/UX components. Driven by curiosity and a commitment to continuous
+        learning, I constantly adapt to the fast-evolving tech landscape to
+        deliver high-quality, scalable solutions across different domains.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10  ">
