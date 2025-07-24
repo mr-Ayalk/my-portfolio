@@ -36,10 +36,10 @@ import {
   shop,
   FoodDelivery,
 } from "../assets";
-import aauLogo from "../../public/aauLogo.png";
-import freelance from "../../public/freelance.png";
-import prodgy from "../../public/prodgy.png";
-import bam from "../../public/bam.png";
+import aauLogo from "/aauLogo.png";
+import freelance from "/freelance.png";
+import prodgy from "/prodgy.png";
+import bam from "/bam.png";
 export const navLinks = [
   {
     id: "about",
