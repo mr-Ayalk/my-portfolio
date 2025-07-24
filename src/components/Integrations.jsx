@@ -48,14 +48,14 @@ export default function Integrations() {
         <div className="grid lg:grid-cols-2 items-center lg:gap-1">
           <div className="overflow-hidden  ">
             <Tag>Technologies</Tag>
-            <h2 className=" text-2xl md:text-4xl font-medium mt-6">
-              I Play well with{" "}
-              <span className="text-yellow-500 "> letest </span>
+            <h2 className="text-2xl md:text-4xl font-medium mt-6">
+              I Work Well with <span className="text-yellow-500"> Latest </span>
               Technologies
             </h2>
             <p className="text-white/50 mt-4 text-xl">
-              For the past 3 years I have been using these techonologues and am
-              learning an being updated with the letest technology tools
+              Over the past 3 years, I've been working with these technologies
+              while continuously learning and staying up to date with the latest
+              tools in the tech world.
             </p>
           </div>
 
