@@ -235,7 +235,7 @@ const projects = [
       },
     ],
     image: top,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://top1-construction.netlify.app/",
   },
   {
     name: "SAAS Landing Page",
@@ -256,7 +256,7 @@ const projects = [
       },
     ],
     image: layer,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://mr-ayalksaaslangingpage.netlify.app/",
   },
   {
     name: "Bamah Tech and Engineering Solution",
@@ -277,7 +277,7 @@ const projects = [
       },
     ],
     image: bamah,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://bamah-engineering.netlify.app/",
   },
 ];
 
@@ -305,7 +305,7 @@ const FullStackprojects = [
       },
     ],
     image: promptly,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://ai-prompt-landing-page.vercel.app/",
   },
   {
     name: "Weyyee Chat App | MERN Project",
@@ -330,7 +330,7 @@ const FullStackprojects = [
       },
     ],
     image: chatApp,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://bamah-chat-app.onrender.com/login",
   },
   {
     name: "NEXT Tutorial LMS | NEXT Tutorial LMS",
@@ -355,7 +355,7 @@ const FullStackprojects = [
       },
     ],
     image: lms,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mr-Ayalk",
   },
 ];
 const MyProduct = [
@@ -382,7 +382,7 @@ const MyProduct = [
       },
     ],
     image: healthCare,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mr-Ayalk",
   },
   {
     name: "E-Commerce App | Local Payment Method Integrated",
@@ -407,7 +407,7 @@ const MyProduct = [
       },
     ],
     image: shop,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://mernecomerceapp.netlify.app/",
   },
   {
     name: "FoodDelivery Mobile App | Local Payment Method Integrated",
@@ -432,7 +432,7 @@ const MyProduct = [
       },
     ],
     image: FoodDelivery,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mr-Ayalk",
   },
 ];
 export {
