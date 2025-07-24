@@ -36,7 +36,10 @@ import {
   shop,
   FoodDelivery,
 } from "../assets";
-
+import aauLogo from "../../public/aauLogo.png";
+import freelance from "../../public/freelance.png";
+import prodgy from "../../public/prodgy.png";
+import bam from "../../public/bam.png";
 export const navLinks = [
   {
     id: "about",
@@ -132,7 +135,7 @@ const experiences = [
   {
     title: "CEO",
     company_name: "Bamah Technology",
-    icon: starbucks,
+    icon: bam,
     iconBg: "#383E56",
     date: "March 2023 - Now",
     points: [
@@ -146,7 +149,7 @@ const experiences = [
     title: "Software Developer and Product Manager",
     company_name:
       "Addis Ababa Technology and Built Environment Collage,Innovation Center,Smart Home Automation Team",
-    icon: shopify,
+    icon: aauLogo,
     iconBg: "#383E56",
     date: "Jan 2023 - Now",
     points: [
@@ -158,8 +161,8 @@ const experiences = [
   },
   {
     title: "Intern - Front End Developer",
-    company_name: "Prodgy Tech",
-    icon: tesla,
+    company_name: "Prodgy Info Tech",
+    icon: prodgy,
     iconBg: "#E6DEDD",
     date: "Jan 2024 - Feb 2025",
     points: [
@@ -172,8 +175,8 @@ const experiences = [
 
   {
     title: "MERN Stack and React Native Mobile App Developer",
-    company_name: "FreeLacing",
-    icon: meta,
+    company_name: "Freelacing",
+    icon: freelance,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
