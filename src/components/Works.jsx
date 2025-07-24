@@ -1,11 +1,11 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import useIsDesktop from "../hooks/useIsDesktop";
+// import useIsDesktop from "../hooks/useIsDesktop";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { FullStackprojects, MyProduct, projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+// import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
   index,
@@ -15,12 +15,8 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
-  const isDesktop = useIsDesktop();
   return (
-    <motion.div
-      variants={isDesktop ? fadeIn("up", "spring", index * 0.5, 0.75) : {}}
-      className="mx-auto justify-center"
-    >
+    <motion.div className="mx-auto justify-center">
       <Tilt
         key={name}
         options={{
@@ -72,10 +68,9 @@ const ProjectCard = ({
 };
 
 const Works = () => {
-  const isDesktop = useIsDesktop();
   return (
     <>
-      <motion.div variants={isDesktop ? textVariant() : {}}>
+      <motion.div>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`text-yellow-200 ${styles.sectionHeadText}`}>
           Projects.
@@ -83,10 +78,7 @@ const Works = () => {
       </motion.div>
 
       <div className="w-full flex">
-        <motion.p
-          variants={isDesktop ? fadeIn("", "", 0.1, 1) : {}}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
+        <motion.p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
           The following projects highlight my skills and experience through
           real-world examples. Each project includes a brief description along
           with links to the source code and live demos. They demonstrate my
@@ -108,10 +100,10 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      <h3 className="mt-10 text-3xl text-white min-h-[300px]">
-        My Products <span className="text-yellow-300">Coming Soon...</span>
-      </h3>
 
+      <h3 className="mt-10 text-3xl text-yellow-300">
+        My Products (Coming Soon...)
+      </h3>
       <div className="mt-10 flex flex-wrap gap-7  min-h-[300px] ">
         {MyProduct.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
