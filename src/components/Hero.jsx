@@ -162,7 +162,7 @@ const Hero = () => {
 
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Hey 👋 I’m Ayalkbet,
+            Hi👋 I’m Ayalkbet,
             <div className="text-yellow-200">a Full Stack </div>
             Software Developer
           </h1>

@@ -1,10 +1,18 @@
 import figmaIcon from "../assets/images/assets/images/figma-logo.svg";
-import notionIcon from "../assets/images/assets/images/notion-logo.svg";
-import slackIcon from "../assets/images/assets/images/slack-logo.svg";
-import relumeIcon from "../assets/images/assets/images/relume-logo.svg";
+import notionIcon from "../assets/images/assets/images/html5.png";
+import slackIcon from "../assets/images/assets/images/css3.png";
+import relumeIcon from "../assets/images/assets/images/tailwindcss.png";
 import framerIcon from "../assets/images/assets/images/framer-logo.svg";
 import gitHubIcon from "../assets/images/assets/images/github-logo.svg";
+import js from "../assets/images/assets/images/js.png";
+import next from "../assets/images/assets/images/next.png";
+import ts from "../assets/images/assets/images/ts.png";
 
+import node from "../assets/images/assets/images/node.png";
+import mongodb from "../assets/images/assets/images/mongodb.png";
+import mysql from "../assets/images/assets/images/mysql.png";
+
+import react from "../assets/images/assets/images/react.png";
 import IntegrationColumn from "../components/IntegrationColumn.jsx";
 import Tag from "../components/Tag.jsx";
 
@@ -37,6 +45,41 @@ const integrations = [
   {
     name: "GitHub",
     icon: gitHubIcon,
+    description: "GitHub is the leading platform for code collaboration.",
+  },
+  {
+    name: "javascript",
+    icon: js,
+    description: "GitHub is the leading platform for code collaboration.",
+  },
+  {
+    name: "typescript",
+    icon: ts,
+    description: "GitHub is the leading platform for code collaboration.",
+  },
+  {
+    name: "react",
+    icon: react,
+    description: "GitHub is the leading platform for code collaboration.",
+  },
+  {
+    name: "Next.js",
+    icon: next,
+    description: "GitHub is the leading platform for code collaboration.",
+  },
+  {
+    name: "Node.js",
+    icon: node,
+    description: "GitHub is the leading platform for code collaboration.",
+  },
+  {
+    name: "MongoDb",
+    icon: mongodb,
+    description: "GitHub is the leading platform for code collaboration.",
+  },
+  {
+    name: "MYSql",
+    icon: mysql,
     description: "GitHub is the leading platform for code collaboration.",
   },
 ];

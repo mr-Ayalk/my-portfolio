@@ -27,11 +27,12 @@ export default function IntegrationColumn(props) {
               className="bg-neutral-900 border border-white/10 rounded-3xl p-2 !px-1 w-[60%] mx-auto"
               key={integration.name}
             >
-              <div className="flex justify-center">
+              <div className="flex justify-center rounded-lg">
                 <img
                   src={integration.icon}
                   alt={`${integration.name} icon`}
                   width={100}
+                  className="rounded-lg"
                 />
               </div>
             </div>
