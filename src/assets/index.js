@@ -37,8 +37,8 @@ import oli from "./oli.png";
 import selman from "./selman.png";
 import abdi from "./abdi.png";
 import healthCare from "./healthCare.png";
-import shop from "./shop.png"
-import FoodDelivery from "./FoodDelivery.png"
+import shop from "./shop.png";
+import FoodDelivery from "./FoodDelivery.png";
 export {
   logo,
   backend,

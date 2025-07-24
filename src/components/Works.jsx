@@ -1,7 +1,6 @@
-import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-
+import useIsDesktop from "../hooks/useIsDesktop";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -16,12 +15,14 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+  const isDesktop = useIsDesktop();
   return (
     <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      variants={isDesktop ? fadeIn("up", "spring", index * 0.5, 0.75) : {}}
       className="mx-auto justify-center"
     >
       <Tilt
+        key={name}
         options={{
           max: 45,
           scale: 1,
@@ -71,9 +72,10 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const isDesktop = useIsDesktop();
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={isDesktop ? textVariant() : {}}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`text-yellow-200 ${styles.sectionHeadText}`}>
           Projects.
@@ -82,7 +84,7 @@ const Works = () => {
 
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={isDesktop ? fadeIn("", "", 0.1, 1) : {}}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           The following projects highlight my skills and experience through
@@ -101,16 +103,16 @@ const Works = () => {
       </div>
       <h3 className="mt-10 text-3xl text-yellow-300">Back End Projects</h3>
 
-      <div className="mt-10 flex flex-wrap gap-7  ">
+      <div className="mt-10 flex flex-wrap gap-7 min-h-[300px]  ">
         {FullStackprojects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      <h3 className="mt-10 text-3xl text-white">
+      <h3 className="mt-10 text-3xl text-white min-h-[300px]">
         My Products <span className="text-yellow-300">Coming Soon...</span>
       </h3>
 
-      <div className="mt-10 flex flex-wrap gap-7  ">
+      <div className="mt-10 flex flex-wrap gap-7  min-h-[300px] ">
         {MyProduct.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
