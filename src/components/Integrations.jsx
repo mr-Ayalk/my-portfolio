@@ -43,22 +43,24 @@ const integrations = [
 
 export default function Integrations() {
   return (
-    <section className="py-24 overflow-hidden">
-      <div className="container">
-        <div className="grid lg:grid-cols-2 items-center lg:gap-16">
-          <div>
+    <section className="px-10 overflow-hidden overflow-x-hidden">
+      <div className="container mx-auto">
+        <div className="grid lg:grid-cols-2 items-center lg:gap-1">
+          <div className="overflow-hidden  ">
             <Tag>Technologies</Tag>
-            <h2 className="text-6xl font-medium mt-6">
-              Play well with <span className="text-lime-400">letest</span>Technologies
+            <h2 className=" text-2xl md:text-4xl font-medium mt-6">
+              I Play well with{" "}
+              <span className="text-yellow-500 "> letest </span>
+              Technologies
             </h2>
-            <p className="text-white/50 mt-4 text-lg">
-              Layers seamlessly connects with your favorite tools, making it
-              easy to plug into any workflow and collaborate across platforms
+            <p className="text-white/50 mt-4 text-xl">
+              For the past 3 years I have been using these techonologues and am
+              learning an being updated with the letest technology tools
             </p>
           </div>
 
           <div>
-            <div className="h-[500px] lg:h-[500px] mt-8 lg:mt-0 overflow-hidden grid md:grid-cols-2 gap-4 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
+            <div className=" h-[600px] lg:h-[400px] mt-8 lg:mt-0 overflow-hidden grid md:grid-cols-2 gap-1 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
               <IntegrationColumn integrations={integrations} />
               <IntegrationColumn
                 integrations={integrations.slice().reverse()}

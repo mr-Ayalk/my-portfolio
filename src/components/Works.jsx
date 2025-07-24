@@ -7,6 +7,7 @@ import { SectionWrapper } from "../hoc";
 import { FullStackprojects, MyProduct, projects } from "../constants";
 // import { fadeIn, textVariant } from "../utils/motion";
 import ArrowUpRightIcon from "../assets/icons/arrow-up-right.svg?react";
+import Tag from "./Tag";
 const ProjectCard = ({
   index,
   name,
@@ -89,13 +90,13 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <h3 className="mt-10 text-3xl text-yellow-300">Front End Projects</h3>
+      <Tag className="mt-8 ">Front End Projects</Tag>
       <div className="mt-10 flex flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      <h3 className="mt-10 text-3xl text-yellow-300">Back End Projects</h3>
+      <Tag className="mt-8  ">Back End Projects</Tag>
 
       <div className="mt-10 flex flex-wrap gap-7 min-h-[300px]  ">
         {FullStackprojects.map((project, index) => (
@@ -103,9 +104,7 @@ const Works = () => {
         ))}
       </div>
 
-      <h3 className="mt-10 text-3xl text-yellow-300">
-        My Products (Coming Soon...)
-      </h3>
+      <Tag className="mt-8 ">My Products (Coming Soon...)</Tag>
       <div className="mt-10 flex flex-wrap gap-7  min-h-[300px] ">
         {MyProduct.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />

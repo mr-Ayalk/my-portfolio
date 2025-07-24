@@ -20,7 +20,7 @@ export default function IntegrationColumn(props) {
         repeat: Infinity,
         ease: "linear",
       }}
-      className={twMerge("flex flex-col gap-4 pb-4", className)}
+      className={twMerge("flex flex-col gap-1  pb-4", className)}
     >
       {Array.from({ length: 2 }).map((_, i) => (
         <Fragment key={i}>
@@ -36,10 +36,6 @@ export default function IntegrationColumn(props) {
                   width={100}
                 />
               </div>
-              <h3 className="text-3xl text-center mt-6">{integration.name}</h3>
-              <p className="text-center text-white/50 mt-2">
-                {integration.description}
-              </p>
             </div>
           ))}
         </Fragment>

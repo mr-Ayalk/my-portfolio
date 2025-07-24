@@ -6,7 +6,7 @@ export default function Tag(props) {
   return (
     <div
       className={twMerge(
-        "inline-flex border border-lime-400 gap-2 text-lime-400 px-3 py-1 rounded-full uppercase items-center",
+        "inline-flex border border-yellow-500 gap-2 text-yellow-400 px-3 py-1 rounded-full uppercase items-center  ",
         className
       )}
       {...otherProps}
