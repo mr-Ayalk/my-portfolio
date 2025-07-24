@@ -143,7 +143,7 @@ const Contact = () => {
               src={myImage}
               alt="smiling imoji"
               className="size-5 rounded-full"
-              width={150}
+              width={130}
             />
           </div>
         </Card>

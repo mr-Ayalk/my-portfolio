@@ -60,7 +60,7 @@ export default function Integrations() {
           </div>
 
           <div>
-            <div className=" h-[600px] lg:h-[400px] mt-8 lg:mt-0 overflow-hidden grid md:grid-cols-2 gap-1 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
+            <div className=" h-[500px] lg:h-[400px] mt-8 lg:mt-0 overflow-hidden grid md:grid-cols-2 gap-1 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
               <IntegrationColumn integrations={integrations} />
               <IntegrationColumn
                 integrations={integrations.slice().reverse()}

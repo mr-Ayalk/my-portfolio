@@ -1,5 +1,3 @@
-"use client";
-// import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import { Fragment } from "react";
@@ -26,7 +24,7 @@ export default function IntegrationColumn(props) {
         <Fragment key={i}>
           {integrations.map((integration) => (
             <div
-              className="bg-neutral-900 border border-white/10 rounded-3xl p-2 !px-1"
+              className="bg-neutral-900 border border-white/10 rounded-3xl p-2 !px-1 w-[60%] mx-auto"
               key={integration.name}
             >
               <div className="flex justify-center">

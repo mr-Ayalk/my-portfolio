@@ -209,7 +209,7 @@ const testimonials = [
     testimonial:
       "Our backend was a mess until Ayalk stepped in. Now, it’s fast, secure, and built to scale.",
     name: "Oli Dereje",
-    designation: "CTO",
+    designation: "CEO",
     company: "Top Construction",
     image: oli,
   },
