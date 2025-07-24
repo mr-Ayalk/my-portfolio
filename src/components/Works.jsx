@@ -2,11 +2,11 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 // import useIsDesktop from "../hooks/useIsDesktop";
 import { styles } from "../styles";
-import { github } from "../assets";
+//import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { FullStackprojects, MyProduct, projects } from "../constants";
 // import { fadeIn, textVariant } from "../utils/motion";
-
+import ArrowUpRightIcon from "../assets/icons/arrow-up-right.svg?react";
 const ProjectCard = ({
   index,
   name,
@@ -16,7 +16,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div className="mx-auto justify-center">
+    <motion.div className="mx-auto justify-center relative ">
       <Tilt
         key={name}
         options={{
@@ -26,23 +26,25 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="w-full h-[230px]">
           <img
             src={image}
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute top-0 right-0 inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="bg-white border-2 border-black w-28 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
+              {/* <img
                 src={github}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
-              />
+              /> */}
+              <h3 className="text-yellow-600 font-bold">Visit Site</h3>
+              <ArrowUpRightIcon className="filt-yetext-yellow-600  text-red-600 size-4" />
             </div>
           </div>
         </div>
