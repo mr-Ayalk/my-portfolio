@@ -8,6 +8,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { Card } from "../components/Card";
+import Tag from "./Tag";
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -73,7 +74,7 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl mt-16 md:mt-1 "
       >
-        <p className="text-2xl text-yellow-200">Get in touch</p>
+        <Tag>Get in touch</Tag>
         <h3 className="text-5xl text-yellow-400">Contact.</h3>
 
         <form
