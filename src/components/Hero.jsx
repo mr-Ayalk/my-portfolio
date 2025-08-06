@@ -177,7 +177,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <button className="myResume inline-flex items-center gap-2 border border-white/15 px-4 h-12 rounded-xl">
             <a
-              href="https://docs.google.com/document/d/1HH47IMkWDWWv71rh774SAIkKgtKTb_bme6XnOTNhVz4/edit?tab=t.0"
+              href="https://drive.google.com/file/d/1W2TFFXthMo8gZapUAGEEfEqUh0tgst-F/view"
               target="_blank"
               rel="noopener noreferrer"
             >
