@@ -149,7 +149,7 @@ const Hero = () => {
           <div className="flex flex-col items-center">
             <img
               src={myImage}
-              className="w-28 md:w-96 rounded-full "
+              className="w-28 md:w-80 md:max-h-80 rounded-full "
               alt="Developer profile"
             />
             <div className="bg-gray-950 border-1 p-2 border-gray-200 shadow-lg  px-4 py-15 inline-flex items-center gap-4 rounded-lg">

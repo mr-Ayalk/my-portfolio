@@ -1,4 +1,3 @@
-
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
@@ -45,7 +44,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-full leading-[30px]"
       >
         I’m a passionate full-stack developer with over 3 years of experience
         working with JavaScript and its modern frameworks—including React,
