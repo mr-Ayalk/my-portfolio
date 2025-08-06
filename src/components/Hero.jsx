@@ -5,11 +5,12 @@ import myImage from "../assets/images/IMG_20241024_065847_232.jpg";
 import SparkleImage from "../assets/icons/sparkle.svg";
 import StarImage from "../assets/icons/star.svg";
 import grainImage from "../assets/images/grain.jpg";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
     <div
-      className="mx-auto justify-center  pt-32 md:pt-32 lg:pt-32 relative z-0 pb-20 overflow-x-clip"
+      className="mx-auto justify-center md:h-screen  pt-32 md:pt-32 lg:pt-32 relative z-0 pb-20 overflow-x-clip"
       id="home"
     >
       <div className="absolute inset-0 pointer-events-none [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
@@ -143,60 +144,85 @@ const Hero = () => {
         </HeroOrbit>
       </div>
 
-      <div className="container">
-        <div className="flex flex-col items-center">
-          <img
-            src={myImage}
-            className="w-28 md:w-60 rounded-full "
-            alt="Developer profile"
-          />
-          <div className="bg-gray-950 border-1 p-2 border-gray-200 shadow-lg  px-4 py-15 inline-flex items-center gap-4 rounded-lg">
-            <div className="bg-green-500 w-3 h-3 rounded-full relative">
-              <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
-            </div>
-            <div className="text-sm font-medium">
-              Available for new projects
+      <div className="container mx-auto">
+        <div className="flex flex-col w-full md:flex-row mx-auto justify-center md:w-[70%] items-center ">
+          <div className="flex flex-col items-center">
+            <img
+              src={myImage}
+              className="w-28 md:w-96 rounded-full "
+              alt="Developer profile"
+            />
+            <div className="bg-gray-950 border-1 p-2 border-gray-200 shadow-lg  px-4 py-15 inline-flex items-center gap-4 rounded-lg">
+              <div className="md:flex-col">
+                <div className="flex-row inline-flex items-center gap-2 md:w-[90%] mx-auto justify-center">
+                  <div className="bg-green-500 w-3 h-3 rounded-full relative">
+                    <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
+                  </div>
+
+                  <div className="text-sm font-medium">
+                    Available for new projects
+                  </div>
+                </div>
+                <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+                  <button className="myResume inline-flex items-center gap-2 border border-white/15 px-4 h-12 rounded-xl">
+                    <a
+                      href="https://drive.google.com/file/d/1W2TFFXthMo8gZapUAGEEfEqUh0tgst-F/view"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="font-semibold whitespace-nowrap inline-flex">
+                        My Resume{" "}
+                        <ArrowDown className="text-white fill-white w-5" />
+                      </span>
+                    </a>
+                  </button>
+
+                  <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+                    <FaGithub className="size-6" />
+                    <a
+                      href="https://github.com/mr-Ayalk"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="font-semibold">My Github</span>
+                    </a>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Hi👋 I’m Ayalkbet,
-            <div className="text-yellow-200">a Full Stack </div>
-            Software Developer
-          </h1>
-          <p className="mt-4 text-center text-white/60 md:text-lg">
-            I specialize in crafting pixel-perfect, fluid, and responsive web
-            applications. I bring designs to life with smooth animations, clean
-            and well-structured front-end architecture, and robust back-end APIs
-            that just work.
-          </p>
-        </div>
+          <div className="max-w-[50%] mx-auto">
+            {/* <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
+              Hi👋 I’m Ayalkbet,
+              <div className="text-yellow-200">a Full Stack </div>
+              Software Developer
+            </h1> */}
+            <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
+              Hi👋 I’m Ayalkbet,
+              <TypeAnimation
+                sequence={[
+                  " a Full Stack Developer",
+                  1000,
+                  " a MERN Stack Developer",
+                  1000,
+                  " a Software Engineer",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={10}
+                className="text-yellow-200 block"
+                repeat={Infinity}
+              />
+            </h1>
 
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="myResume inline-flex items-center gap-2 border border-white/15 px-4 h-12 rounded-xl">
-            <a
-              href="https://drive.google.com/file/d/1W2TFFXthMo8gZapUAGEEfEqUh0tgst-F/view"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="font-semibold whitespace-nowrap inline-flex">
-                My Resume <ArrowDown className="text-white fill-white w-5" />
-              </span>
-            </a>
-          </button>
-
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-            <FaGithub className="size-6" />
-            <a
-              href="https://github.com/mr-Ayalk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="font-semibold">My Github</span>
-            </a>
-          </button>
+            <p className="mt-4 text-center text-white/60 md:text-lg">
+              I specialize in crafting pixel-perfect, fluid, and responsive web
+              applications. I bring designs to life with smooth animations,
+              clean and well-structured front-end architecture, and robust
+              back-end APIs that just work.
+            </p>
+          </div>
         </div>
       </div>
     </div>
