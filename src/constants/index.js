@@ -36,6 +36,7 @@ import {
   shop,
   FoodDelivery,
 } from "../assets";
+import henok from "../assets/images/henok.png";
 import aauLogo from "/aauLogo.png";
 import freelance from "/freelance.png";
 import prodgy from "/prodgy.png";
@@ -132,20 +133,20 @@ const technologies = [
 ];
 
 const experiences = [
-  {
-    title: "CEO",
-    company_name: "Bamah Technology",
-    icon: bam,
-    iconBg: "#383E56",
-    date: "March 2023 - Now",
-    points: [
-      "Spearheaded the development of new digital products, including hospital, pharmacy management, and e-commerce systems.",
-      "Maintained and updated existing software solutions for optimal performance.",
-      "Delivered professional-grade websites tailored to client needs.",
-      "Led full-stack development of web and mobile applications.",
-      "Drove innovation and growth in software product offerings across multiple domains.",
-    ],
-  },
+  // {
+  //   title: "CEO",
+  //   company_name: "Bamah Technology",
+  //   icon: bam,
+  //   iconBg: "#383E56",
+  //   date: "March 2023 - Now",
+  //   points: [
+  //     "Spearheaded the development of new digital products, including hospital, pharmacy management, and e-commerce systems.",
+  //     "Maintained and updated existing software solutions for optimal performance.",
+  //     "Delivered professional-grade websites tailored to client needs.",
+  //     "Led full-stack development of web and mobile applications.",
+  //     "Drove innovation and growth in software product offerings across multiple domains.",
+  //   ],
+  // },
   {
     title: "Software Developer & Product Manager",
     company_name:
@@ -198,21 +199,21 @@ const testimonials = [
       "He’s not just a developer, he’s a problem solver. Always exploring new tech to improve our product.",
     name: "Abdisa Teso",
     designation: "CoFounder",
-    company: "Bamah Technology & Engineering",
+    company: "Bamah Technology StartUp",
     image: abdi,
   },
   {
     testimonial:
       "Ayalk's attention to detail is unmatched — every design was pixel-perfect and flawlessly responsive.",
-    name: "Rabuma Milisha",
-    designation: "Quality Assurance and React Dev.",
-    company: "Organic Tech",
-    image: selman,
+    name: "Henok K.",
+    designation: "Software Engineer.",
+    company: "Freelance",
+    image: henok,
   },
   {
     testimonial:
       "Our backend was a mess until Ayalk stepped in. Now, it’s fast, secure, and built to scale.",
-    name: "Oli Dereje",
+    name: "Birhanu D.",
     designation: "CEO",
     company: "Top Construction",
     image: oli,
@@ -364,7 +365,7 @@ const FullStackprojects = [
 ];
 const MyProduct = [
   {
-    name: "HealthCare Management System |AI Assitant Integrated",
+    name: "HealthCare Management System | Chapa Payment Method Integrated ",
     description:
       "A modern, fully responsive front-end project built with React.js and styled using Tailwind CSS. Features smooth animations powered by Framer Motion, clean code .",
     tags: [
@@ -386,7 +387,7 @@ const MyProduct = [
       },
     ],
     image: healthCare,
-    source_code_link: "https://github.com/mr-Ayalk",
+    source_code_link: "https://healthcaremanagement-dow4.vercel.app/",
   },
   {
     name: "E-Commerce App | Local Payment Method Integrated",
