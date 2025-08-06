@@ -96,7 +96,7 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      <Tag className="mt-8  ">Back End Projects</Tag>
+      <Tag className="mt-8  ">FullStack Projects</Tag>
 
       <div className="mt-10 flex flex-wrap gap-7 min-h-[300px]  ">
         {FullStackprojects.map((project, index) => (
