@@ -146,13 +146,8 @@ const Hero = () => {
 
       <div className="container mx-auto">
         <div className="flex flex-col w-full md:flex-row mx-auto justify-center md:w-[70%] items-center ">
-          <div className="max-w-[50%] mx-auto">
-            {/* <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-              Hi👋 I’m Ayalkbet,
-              <div className="text-yellow-200">a Full Stack </div>
-              Software Developer
-            </h1> */}
-            <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
+          <div className="max-w-[50%] mx-auto hidden md:block">
+            <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide ">
               Hi👋 I’m Ayalkbet,
               <TypeAnimation
                 sequence={[
@@ -170,7 +165,7 @@ const Hero = () => {
               />
             </h1>
 
-            <p className="mt-4 text-center text-white/60 md:text-lg">
+            <p className="mt-4 text-center text-white/60 md:text-lg ">
               I specialize in crafting pixel-perfect, fluid, and responsive web
               applications. I bring designs to life with smooth animations,
               clean and well-structured front-end architecture, and robust
