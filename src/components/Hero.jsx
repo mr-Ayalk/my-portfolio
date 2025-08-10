@@ -190,6 +190,23 @@ const Hero = () => {
                     Available for new projects
                   </div>
                 </div>
+                <h1 className="font-serif text-xl md:hidden text-center mt-8 tracking-wide ">
+                  Hi👋 I’m Ayalkbet,
+                  <TypeAnimation
+                    sequence={[
+                      " a Full Stack Developer",
+                      1000,
+                      " a MERN Stack Developer",
+                      1000,
+                      " a Software Engineer",
+                      1000,
+                    ]}
+                    wrapper="span"
+                    speed={10}
+                    className="text-yellow-200 block"
+                    repeat={Infinity}
+                  />
+                </h1>
                 <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
                   <button className="myResume inline-flex items-center gap-2 border border-white/15 px-4 h-12 rounded-xl">
                     <a
