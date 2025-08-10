@@ -1,3 +1,4 @@
 live - https://ayalk.netlify.app/
 
-<img width="1348" height="637" alt="image" src="https://github.com/user-attachments/assets/21cc7058-0733-4e38-867b-6840400817b4" />
+<img width="1348" height="640" alt="image" src="https://github.com/user-attachments/assets/9aced8e1-3560-4c09-a254-c1cbfba8fb9d" />
+
