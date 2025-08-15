@@ -20,12 +20,12 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import layer from "./layer.png";
+// import layer from "./layer.png";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-import top from "./top.png";
+// import top from "./top.png";
 import carrent from "./carrent.png";
 import bamah from "./bamah.png";
 import jobit from "./jobit.png";
@@ -39,7 +39,9 @@ import abdi from "./abdi.png";
 import healthCare from "./healthCare.png";
 import shop from "./shop.png";
 import FoodDelivery from "./FoodDelivery.png";
-import smartify from "./smartify.png";
+import smartify from "../assets/images/assets/images/smartify1.png";
+import layer from "../assets/images/assets/images/saas1.png";
+import top from "../assets/images/assets/images/top1.png";
 export {
   smartify,
   logo,

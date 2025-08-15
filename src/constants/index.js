@@ -338,13 +338,38 @@ const FullStackprojects = [
     image: chatApp,
     source_code_link: "https://bamah-chat-app.onrender.com/login",
   },
+  // {
+  //   name: "NEXT Tutorial LMS | NEXT Tutorial LMS",
+  //   description:
+  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  //   tags: [
+  //     {
+  //       name: "React",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "Tailwind",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "Clean and Structured Code",
+  //       color: "yellow",
+  //     },
+  //   ],
+  //   image: lms,
+  //   source_code_link: "https://github.com/mr-Ayalk",
+  // },
   {
-    name: "NEXT Tutorial LMS | NEXT Tutorial LMS",
+    name: "HealthCare System | Chapa Payment Method ",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A modern, fully responsive front-end project built with React.js and styled using Tailwind CSS. Features smooth animations powered by Framer Motion, clean code .",
     tags: [
       {
-        name: "React",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
@@ -352,7 +377,7 @@ const FullStackprojects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "MongoDb",
         color: "pink-text-gradient",
       },
       {
@@ -360,8 +385,8 @@ const FullStackprojects = [
         color: "yellow",
       },
     ],
-    image: lms,
-    source_code_link: "https://github.com/mr-Ayalk",
+    image: healthCare,
+    source_code_link: "https://healthcaremanagement-dow4.vercel.app/",
   },
 ];
 const MyProduct = [

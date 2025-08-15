@@ -104,12 +104,12 @@ const Works = () => {
         ))}
       </div>
 
-      <Tag className="mt-8 ">My Products (Coming Soon...)</Tag>
+      {/* <Tag className="mt-8 ">My Products (Coming Soon...)</Tag>
       <div className="mt-10 flex flex-wrap gap-7  min-h-[300px] ">
         {MyProduct.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };
