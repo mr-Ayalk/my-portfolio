@@ -39,7 +39,9 @@ import abdi from "./abdi.png";
 import healthCare from "./healthCare.png";
 import shop from "./shop.png";
 import FoodDelivery from "./FoodDelivery.png";
+import smartify from "./smartify.png";
 export {
+  smartify,
   logo,
   backend,
   creator,

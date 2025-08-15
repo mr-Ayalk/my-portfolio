@@ -35,6 +35,7 @@ import {
   healthCare,
   shop,
   FoodDelivery,
+  smartify,
 } from "../assets";
 import henok from "../assets/images/henok.png";
 import aauLogo from "/aauLogo.png";
@@ -222,7 +223,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Top Construction Company",
+    name: "Smartify Innovation Company",
     description:
       "A modern, fully responsive front-end project built with React.js and styled using Tailwind CSS. Features smooth animations powered by Framer Motion, clean code structure, and top-tier code quality.",
     tags: [
@@ -239,8 +240,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: top,
-    source_code_link: "https://top1-construction.netlify.app/",
+    image: smartify,
+    source_code_link: "https://smartify-solutions.vercel.app/",
   },
   {
     name: "SAAS Landing Page",
@@ -264,12 +265,12 @@ const projects = [
     source_code_link: "https://mr-ayalksaaslangingpage.netlify.app/",
   },
   {
-    name: "Bamah Tech and Engineering Solution",
+    name: "Top Construction Company",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A modern, fully responsive front-end project built with React.js and styled using Tailwind CSS. Features smooth animations powered by Framer Motion, clean code structure, and top-tier code quality.",
     tags: [
       {
-        name: "React",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
@@ -277,12 +278,12 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Framer Motion",
         color: "pink-text-gradient",
       },
     ],
-    image: bamah,
-    source_code_link: "https://bamah-engineering.netlify.app/",
+    image: top,
+    source_code_link: "https://top1-construction.netlify.app/",
   },
 ];
 
